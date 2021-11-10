@@ -1,12 +1,21 @@
 package com.example.garciajoaquin_appmusic;
 
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.os.LocaleList;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +64,35 @@ public class Home_Fragment extends Fragment {
         }
     }
 
+    private void setAppLocale(String localeCode){
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration config = res.getConfiguration();
+
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.JELLY_BEAN_MR1){
+            config.setLocale(new Locale(localeCode.toLowerCase()));
+        }else{
+            config.locale = new Locale(localeCode.toLowerCase());
+        }
+        res.updateConfiguration(config, dm);
+    }
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        Button btnConfig = view.findViewById(R.id.btnConfiguration);
+        btnConfig.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                setAppLocale("it");
+            }
+        });
+
+
+        return view;
     }
 }
