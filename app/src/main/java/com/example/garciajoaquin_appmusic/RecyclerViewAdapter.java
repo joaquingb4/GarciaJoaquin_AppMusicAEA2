@@ -55,7 +55,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             tagNameSong = itemView.findViewById(R.id.itemListSongName);
             tagAutorName = itemView.findViewById(R.id.itemListAutor);
             tagDuration = itemView.findViewById(R.id.itemListSongDuration);
-
         }
     }
 }
