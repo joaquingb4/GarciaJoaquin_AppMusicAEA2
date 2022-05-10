@@ -1,4 +1,4 @@
-package com.example.garciajoaquin_appmusic;
+package com.joaquin.testAppMusic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,13 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.joaquin.testAppMusic.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -61,12 +62,10 @@ public class MainActivity extends AppCompatActivity {
                 if (txtUserName.getText().toString().equals("Alonso") && txtPassword.getText().toString().equals("1234")){
 
                     lblLoginResult.setText("Successful login");//Set message on the textview
-                    Log.i("Test","Successful login");
                     startActivity(loginIntent);
 
                 }else{
                     lblLoginResult.setText("Wrong name or password");//Set message on the textview
-                    Log.i("Test","Wrong name or password");
                 }
                 //Text view turn in visible
                 lblLoginResult.setVisibility(View.VISIBLE);

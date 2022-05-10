@@ -6,7 +6,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.garciajoaquin_appmusic"
+        applicationId "com.garciajoaquin_appmusic"
         minSdk 24
         targetSdk 31
         versionCode 1

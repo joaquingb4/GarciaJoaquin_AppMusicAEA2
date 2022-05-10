@@ -1,4 +1,4 @@
-package com.example.garciajoaquin_appmusic;
+package com.joaquin.testAppMusic;
 
 import android.content.Context;
 

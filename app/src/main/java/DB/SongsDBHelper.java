@@ -4,12 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 
-import androidx.annotation.Nullable;
-
-import com.example.garciajoaquin_appmusic.Song;
+import com.joaquin.testAppMusic.Song;
 
 public class SongsDBHelper extends SQLiteOpenHelper {
     //Attributes
@@ -36,7 +33,6 @@ public class SongsDBHelper extends SQLiteOpenHelper {
 
             db.insert(SongsContract.SongsEntry.TABLE_NAME, null, values);
         }else{
-            Log.i("sql","Database is closed");
         }
     }
 
