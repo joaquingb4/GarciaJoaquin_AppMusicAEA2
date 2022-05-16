@@ -1,4 +1,4 @@
-package com.joaquin.testAppMusic;
+package music.test.testAppMusic;
 
 public class Song {
     String name;

@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-import com.joaquin.testAppMusic.Song;
+import music.test.testAppMusic.Song;
 
 public class SongsDBHelper extends SQLiteOpenHelper {
     //Attributes

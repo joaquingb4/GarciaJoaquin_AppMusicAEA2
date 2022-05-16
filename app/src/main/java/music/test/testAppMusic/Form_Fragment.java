@@ -1,4 +1,4 @@
-package com.joaquin.testAppMusic;
+package music.test.testAppMusic;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.joaquin.testAppMusic.R;
 
 import DB.SongsDBHelper;
 

@@ -1,4 +1,4 @@
-package com.joaquin.testAppMusic;
+package music.test.testAppMusic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +13,6 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.joaquin.testAppMusic.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //Check if the name and password fields are correct
-                if (txtUserName.getText().toString().equals("Alonso") && txtPassword.getText().toString().equals("1234")){
+                if (txtUserName.getText().toString().equals("test") && txtPassword.getText().toString().equals("1234")){
 
                     lblLoginResult.setText("Successful login");//Set message on the textview
                     startActivity(loginIntent);

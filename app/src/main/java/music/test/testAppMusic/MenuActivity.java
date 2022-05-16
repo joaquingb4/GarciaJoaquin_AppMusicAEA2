@@ -1,11 +1,10 @@
-package com.joaquin.testAppMusic;
+package music.test.testAppMusic;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 
-import com.joaquin.testAppMusic.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.joaquin.testAppMusic;
+package music.test.testAppMusic;
 
 import org.junit.Test;
 
